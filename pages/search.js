@@ -75,8 +75,8 @@ export default function SearchPage({ products, categories }) {
                 <StyledProductsGrid products={filteredProducts} />
               ) : (
                 <p>
-                  Nie znaleziono żadnych produktów dla frazy "
-                  {searchQuery}". Spróbuj wpisać typ lub markę produktu, którego szukasz.
+                  Nie znaleziono żadnych produktów dla frazy &quot;
+                  {searchQuery}&quot;. Spróbuj wpisać typ lub markę produktu, którego szukasz.
                 </p>
               )}
             </motion.div>

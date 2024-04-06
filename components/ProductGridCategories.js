@@ -37,7 +37,7 @@ export default function ProductsGridCategories({ products, categoryId }) {
       {products?.length > 0 &&
         products.map((product, index) =>
           index === 3 ? (
-            <ProductWrapper>
+            <ProductWrapper key={categoryId}>
               <WhiteBox href={`/categories/${categoryId}`}>
                 Zobacz więcej
                 <Pointer/>
