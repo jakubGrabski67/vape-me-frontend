@@ -411,7 +411,10 @@ export default function AccountPage() {
                     Wyloguj się
                   </Button>
                 ) : (
-                  <Button payment block onClick={() => signIn("google")}>
+                  <Button payment block onClick={(e) => {
+                    e.preventDefault()
+                    signIn('google')
+                  }}>
                     Zaloguj się przez Google
                   </Button>
                 )}
