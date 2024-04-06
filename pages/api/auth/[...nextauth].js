@@ -16,7 +16,7 @@ const generateNextAuthSecret = () => {
 };
 
 export default NextAuth({
-  secret: process.env.SECRET || generateNextAuthSecret(),
+  secret: process.env.NEXTAUTH_SECRET || generateNextAuthSecret(),
   providers: [
     GoogleProvider({
       clientId: process.env.GOOGLE_ID,
